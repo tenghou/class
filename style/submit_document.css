@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+.submi_pro {
+	width:auto;
+	height:600px;
+	border:2px solid #ccc;
+	font-size:12px;
+}
+.submi_pro h2 {
+	text-indent:0;
+	text-align:center;
+}
+.submi_pro p {
+	text-align:center;
+	padding:20px;
+}
+.submi_pro p a {
+	font-size:14px;
+	color:#333;
+}
+.submi_pro dl {
+	width:300px;
+	margin:20px auto;
+}
+.submi_pro dl dd {
+	padding:5px 0;
+}
+.submi_pro dl dd input.text {
+	border:1px dashed #333;
+	background:#fff;
+	width:180px;
+	height:19px;
+}
+
+.submi_pro dl dd input.yzm {
+	width:60px;
+}
+.submi_pro dl dd input.submit {
+	width:60px;
+	height:19px;
+	border:1px dashed #333;
+	background:#fff;
+	cursor:pointer;
+	margin-left:55px;
+}
+.submi_pro dl dd input.location {
+	margin:5px 0 0 22px;
+}
+.submi_pro dl dd input.submit:hover{
+	color:#f00;
+}
+.submi_pro dl dd img#code {
+	position:relative;
+	top:8px;
+	cursor:pointer;
+}
+
+
+
+
+

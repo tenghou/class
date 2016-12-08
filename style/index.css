@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+#index_uni{
+    width:960px;
+	height:auto;
+	margin:0 auto;
+	border:2px solid #ccc;
+}
+#index h1{
+	text-align:center;
+	margin:10px auto;
+}
+#index p{
+	text-align:center;
+}
+#index h2{
+	width:960px;
+	text-indent:0;
+	text-align:center;
+	margin:0 auto;
+}
+#index h2 a{
+	float:right;
+	margin:0 10px auto auto;
+	color:black;
+}
+
+#index h2 a:hover{
+	color:#f00;
+}
+
+#index dl{
+	width:auto;
+	margin:10px 40px;
+}
+#index h3{
+	font-weight:normal;
+	font-size:12px
+} 
+/* 
+#index dl dd{
+	padding:5px 0;
+} */
+#index dl dd input.button{
+	width:200px;
+	height:123.6px;
+	border:1px dashed #333;
+	cursor:pointer;
+	margin:5px 0 0 48px;
+}
+#index dl dd input.button {
+	margin:5px 0 0 22px;
+}
+
+#index dl dd input.button:hover{
+	color:#f00;
+}
+
+
+
+
+
+
+
+
+
+

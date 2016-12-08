@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+#main{
+	float:right;
+	width:790px;
+	height:505px;
+	border:3px solid gray;
+	/* margin:20px 158px auto auto; */
+	margin:20px auto auto 0;
+}
+#main span{
+	font-size:15px;
+	line-height:25px;
+	margin:30px;
+	
+}
+#main h3{
+	margin:5px 10px;
+}
+#main #table table {
+	width:90%;
+	margin:20px auto;
+	text-align:center;
+	background:#ccc;
+	margin-bottom:0px;
+}
+#main #table table th,#main #table table td {
+	height:30px;
+	line-height:30px;
+	background:#fff;
+}
+#main #table table td {
+	cursor:pointer;
+}
+#main #table table td.blank{
+	height:19.1px;
+}
+
+#main #table table tr td a{
+	text-decoration:none;
+	cursor:pointer;
+	color:black;
+}
+#main #table table tr td a:hover{
+	color:#f00;
+}
+
+#main #table table tr td.mark{
+	text-decoration:none;
+	cursor:pointer;
+	color:black;
+}
+#main #table table tr td.mark:hover{
+	color:#f00;
+	text-decoration:underline;
+}
+#main #table form dl dd textarea{
+	width:97%;
+}
+#main #table form dl dd textarea{
+	padding:10px;
+}
+#js{
+	font-size:15px;
+	text-indent:700px;
+}
+#search form .select{
+	margin:20px 0 0 250px;
+	height:25px;
+}
+#search form input.text {
+	width:200px;
+	height:23px;
+	border:1px dashed #333;
+	background:#fff;
+}
+
+/* h2 {
+	font-size:14px;
+	background:#ddd; 
+	height:25px;
+	line-height:25px;
+	margin:0 auto;
+	text-align:center;
+}
+ */

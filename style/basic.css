@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+*{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+a,img{
+	border:0;
+	text-decoration:none;
+}
+body{
+	font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
+}
+#body{
+	width:960px;
+	height:auto;
+	margin:0 auto;
+}
+ul {
+	list-style-type:none;
+}
+h2 {
+	font-size:14px;
+	background:#ddd; 
+	height:25px;
+	line-height:25px;
+	margin:0 auto;
+	text-align:center;
+} 
+/* #login h2{
+	width:960px;
+	margin:0 auto;
+}
+ */
+#page_num {
+	height:20px;
+	clear:both;
+	padding:20px 0;
+	position:relative;
+}
+#page_num ul {
+	position:absolute;
+	right:35px;
+	height:20px;
+	margin-right:90px;
+}
+#page_num ul li {
+	float:left;
+	width:26px;
+	height:20px;
+}
+#page_num ul li a {
+	display:block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	border:1px solid #333;
+	text-align:center;
+	text-decoration:none;
+}
+#page_num ul li a:hover,#page_num ul li a.selected {
+	background:#666;
+	font-weight:bold;
+	color:#fff;
+}
+
+#page_text {
+	height:20px;
+	clear:both;
+	padding:20px 0;
+}
+#page_text ul {
+	text-align:center;
+}
+#page_text ul li {
+	display:inline;
+}
+#page_text ul li a {
+	color:#333;
+}
+#page_text ul li a:hover{
+	color:red;
+}
+
+#footer{
+	clear:both;
+	width:auto;
+	height:60px;
+	text-align:center;
+	padding:10px 0 0 0;
+}
+#footer p{
+	font-size:12px;
+	letter-spacing:1px;
+	padding:10px 0 0 0;
+}
+#footer p span{
+	color:rgba(88,94,92,1);
+}
+#footer p span:hover{
+	cursor:pointer;
+	color:rgba(266,17,0,1);
+}
+
+
+
+
+

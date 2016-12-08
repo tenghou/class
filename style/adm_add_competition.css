@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+#main_editor{
+	float:right;
+	width:790px;
+	height:505px;
+	border:3px solid gray;
+	/* margin:20px 158px auto auto; */
+	margin:20px auto auto 0;
+}
+#main_editor h3{
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+	margin:5px auto 5px 10px;
+}
+#main_editor input.title{
+	width:90%;
+	height:25px;
+	border:1px dashed #ccc;
+}
+#main_editor input.submit {
+	width:60px;
+	height:20px;
+	float:right;
+	border:1px solid #ccc;
+	background:white;
+	cursor:pointer;
+}
+#main_editor input.submit:hover{
+	color:#f00;
+}

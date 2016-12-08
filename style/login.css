@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+#index_uni{
+    width:960px;
+	height:auto;
+	margin:0 auto;
+	border:2px solid #ccc;
+}
+
+#login h2{
+	width:960px;
+	text-indent:0;
+	text-align:center;
+	margin:0 auto;
+}
+#login h2 a{
+	float:right;
+	margin:0 10px auto auto;
+	color:black;
+}
+
+#login h2 a:hover{
+	color:#f00;
+}
+#login dl{
+	width:300px;
+	margin:40px auto;
+}
+
+#login dl dd{
+	padding:5px 0;
+}
+#login dl dd label{
+	cursor:pointer;
+	margin-right:10px;
+}
+
+#login dl dd input.text{
+	width:200px;
+	height:19px;
+	border:1px dashed #333;
+	background:white;
+}
+#login dl dd input.note{
+	margin:10px 0 0 0;
+}
+
+#login dl dd input.submit{
+	width:60px;
+	height:19px;
+	border:1px dashed #333;
+	cursor:pointer;
+	margin:5px 0 0 48px;
+}
+#login dl dd input.location {
+	margin:5px 0 0 22px;
+}
+
+#login dl dd input.submit:hover{
+	color:#f00;
+}
+#login dl dd input.yzm{
+	width:60px;
+	margin:-40px 0 0 0;
+}
+#login dl dd img#code{
+	position:relative;
+	top:8px;
+	left:5px;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+

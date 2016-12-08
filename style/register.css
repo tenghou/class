@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+*{
+	padding:0;
+	margin:0;
+}
+#main{
+	width:960px;
+	margin:0 auto;
+	border:2px solid #ccc;
+}
+#info {
+	width:960px;
+	height:500px;
+	margin:0 auto;
+	font-size:12px;
+}
+#info h2 {
+ 	text-indent:0; 
+	text-align:center;
+	width:100%;
+	background:#ddd; 
+}
+#info dl {
+	width:340px;
+	margin:0 auto;
+}
+#info dl dt {
+	width:320px;
+	text-align:center;
+	padding:10px 0;
+	font-weight:bold;
+}
+#info dl dd {
+	padding:5px 0;
+}
+#info dl dd label{
+	cursor:pointer;
+	margin-right:10px;
+}
+#info dl dd input.text {
+	width:220px;
+	height:19px;
+	border:1px dashed #333;
+	background:#fff;
+}
+#info dl dd input.yzm {
+	width:60px;
+}
+#info dl dd input.submit {
+	width:60px;
+	height:19px;
+	border:1px dashed #333;
+	background:#fff;
+	cursor:pointer;
+	margin:0 0 0 120px;
+}
+#info dl dd img#code {
+	position:relative;
+	top:8px;
+	cursor:pointer;
+}
+#info dl dd input.submit{
+	width:60px;
+	height:19px;
+	border:1px dashed #333;
+	cursor:pointer;
+	margin:5px 0 0 60px;
+}
+#info dl dd input.location {
+	margin:5px 0 0 22px;
+}
+
+#info dl dd input.submit:hover{
+	color:#f00;
+}
+#footer{
+	clear:both;
+	width:auto;
+	height:60px;
+	text-align:center;
+	padding:10px 0 0 0;
+}
+#footer p{
+	font-size:12px;
+	letter-spacing:1px;
+	padding:10px 0 0 0;
+}
+#footer p span{
+	color:rgba(88,94,92,1);
+}
+#footer p span:hover{
+	cursor:pointer;
+	color:rgba(266,17,0,1);
+}
+

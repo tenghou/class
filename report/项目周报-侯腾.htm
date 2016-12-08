@@ -1,0 +1,155 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=GB2312"/>
+<title>24点</title>
+<style>
+body{
+ background-color:buttonface;
+ width:500px
+ height:auto;
+ padding:0 auto;
+}
+#txt_result{
+ background-color:#6090DA;
+ border:black solid 1px;
+ color:white;
+ font-weight:bold;
+ height:40px;
+ width:320px;
+}
+</style>
+<script>
+var v1,v2,v3,v4,v5,txt_result;//定义全局变量
+//下面的函数通过id属性获取页面元素对象的引用
+function $(str){
+return (document.getElementById(str));
+}
+
+//返回下面的函数接受四个正整数为参数，循环测试所有可能的四则运算式，并显示符合结果的算式
+function call(val1,val2,val3,val4){
+	theArray0=new Array(val1,val2,val3,val4);
+	theArray1=new Array('1234','1243','1324','1342','1423','1432','2143','2134','2314','2341','2413','2431','3124','3142','3214','3241','3412','3421','4123','4132','4213','4231','4312','4321');
+	theArray2=new Array('+','-','*','/');
+	a1=parseInt(v5.value);
+	for(var ii=0;ii<24;ii++){
+		theArray3=theArray1[ii].split('');
+		for(var mm=0;mm<4;mm++){
+			theArray3[mm]=parseInt(theArray3[mm]);
+		}
+		for(var jj=0;jj<4;jj++){
+			for(var kk=0;kk<4;kk++){
+				for(var ll=0;ll<4;ll++){
+					ss1=theArray0[theArray3[0]-1]+theArray2[jj]+theArray0[theArray3[1]-1]+theArray2[kk]+theArray0[theArray3[2]-1]+theArray2[ll]+theArray0[theArray3[3]-1];
+					if(eval(ss1)==a1){
+						return (ss1);
+					}
+					ss1='('+theArray0[theArray3[0]-1]+theArray2[jj]+theArray0[theArray3[1]-1]+')'+theArray2[kk]+theArray0[theArray3[2]-1]+theArray2[ll]+theArray0[theArray3[3]-1];
+					if(eval(ss1)==a1){
+						return (ss1);
+					}
+					ss1=theArray0[theArray3[0]-1]+theArray2[jj]+'('+theArray0[theArray3[1]-1]+theArray2[kk]+theArray0[theArray3[2]-1]+')'+theArray2[ll]+theArray0[theArray3[3]-1];
+					if(eval(ss1)==a1){
+						return (ss1);
+					}
+					ss1=theArray0[theArray3[0]-1]+theArray2[jj]+theArray0[theArray3[1]-1]+theArray2[kk]+'('+theArray0[theArray3[2]-1]+theArray2[ll]+theArray0[theArray3[3]-1]+')';
+					if(eval(ss1)==a1){
+						return (ss1);
+					}
+					ss1='('+theArray0[theArray3[0]-1]+theArray2[jj]+theArray0[theArray3[1]-1]+theArray2[kk]+theArray0[theArray3[2]-1]+')'+theArray2[ll]+theArray0[theArray3[3]-1];
+					if(eval(ss1)==a1){
+						return (ss1);
+					}
+					ss1=theArray0[theArray3[0]-1]+theArray2[jj]+'('+theArray0[theArray3[1]-1]+theArray2[kk]+theArray0[theArray3[2]-1]+theArray2[ll]+theArray0[theArray3[3]-1]+')';
+					if(eval(ss1)==a1){
+						return (ss1);
+					}
+					ss1='('+theArray0[theArray3[0]-1]+theArray2[jj]+theArray0[theArray3[1]-1]+')'+theArray2[kk]+'('+theArray0[theArray3[2]-1]+theArray2[ll]+theArray0[theArray3[3]-1]+')';
+					if(eval(ss1)==a1){
+						return (ss1);
+					}
+				}
+			}
+		}
+	}
+	return (false);
+}
+/*
+* 下面函数接受页面的输入，处理后输出
+*/
+function main(){
+	var s1=call(v1.value,v2.value,v3.value,v4.value);
+	if(s1){
+		txt_result.innerText+='\n'+s1+'=='+v5.value;
+	}else{
+		txt_result.innerText+='\n'+v1.value+','+v2.value+','+v3.value+','+v4.value+'无结果！';
+	}
+	init();
+	return (false);
+}
+
+/*
+* 下面的函数检查用户输入时候符合要求
+*/
+function check1(obj1){
+	if(isNan(obj.value)){
+		alert('请输入一个数值！');
+		obj1.focus();
+		obj1.select();
+		event.returnValue=false;
+		event.cancleBubble=true;
+		return (false);
+	}
+}
+
+/*
+* 下面函数清空输出
+*/
+function clear_input(){
+	txt_result.innerText='';
+	v1.focus();
+	return (true);
+}
+
+/*
+* 下面函数初始化全局变量
+*/
+function init(){
+	v1=$("v1");
+	v2=$("v2");
+	v3=$("v3");
+	v4=$("v4");
+	v5=$("v5");
+	txt_result=$('txt_result');
+	v1.select();
+}
+</script>
+</head>
+<body style="overflow: auto;" onload="init();">
+	<form onsubmit="return (main());">
+		<b>请输入要计算的4个数：</b><br>
+		<input id="v1" onchange="check1(this);">
+		<input id="v2" onchange="check1(this);"><br>
+		<input id="v3" onchange="check1(this);">
+		<input id="v4" onchange="check1(this);"><br>
+		<b>请输入要计算的目标：</b><br>
+		<input id="v5" onchange="check1(this);" value="24"><br>
+		<input type="submit" value="计算">
+		<input type="reset" onclick="clear_input();" value="清除结果">
+	</form>
+	<b>结果：</b><br>
+	<div id="txt_result"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+#main #table tr input.text {
+	width:80px;
+	height:19px;
+	border:1px dashed #333;
+	background:#fff;
+	margin-left:10px;
+}

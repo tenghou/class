@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+#main #js a{
+	font-size:18px;
+	text-decoration:none;
+	cursor:pointer;
+	color:rgba(213,26,33,1);
+}
+#main #js a:hover{
+	color:rgba(266,17,0,1);
+}
+#main .content{
+	margin-top:20px;
+}

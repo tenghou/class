@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+#info {
+	width:790px;
+	height:500px;
+	margin:0;
+	font-size:12px;
+}
+#info h2 {
+	text-indent:0;
+	text-align:center;
+	width:100%;
+}
+#info dl {
+	width:400px;
+	margin:0 237px;
+}
+#info dl dt {
+	width:320px;
+	text-align:center;
+	padding:10px 0;
+	font-weight:bold;
+}
+#info dl dd {
+	padding:5px 0;
+}
+#info dl dd input.text {
+	width:220px;
+	height:19px;
+	border:1px dashed #333;
+	background:#fff;
+}
+#info dl dd input.count {
+	width:54px;
+	height:19px;
+	text-align:center;
+	border:1px dashed #333;
+	background:#fff;
+}
+#info dl dd input.yzm {
+	width:60px;
+}
+#info dl dd input.submit {
+	width:60px;
+	height:19px;
+	border:1px dashed #333;
+	background:#fff;
+	cursor:pointer;
+	margin:0 0 0 115px;
+}
+
+#info dl dd input.submit:hover{
+	color:#f00;
+}
+#info dl dd img#code {
+	position:relative;
+	top:8px;
+	cursor:pointer;
+}

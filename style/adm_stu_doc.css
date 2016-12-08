@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+#main input.back{
+	width:60px;
+	height:19px;
+	border:1px solid #bbb;
+	background:#fff;
+	cursor:pointer;
+	float:right;
+	margin:20px 40px auto auto;
+}
+#main input.back:hover{
+	color:#f00;
+}

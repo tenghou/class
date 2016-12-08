@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+#main h2 {
+	text-indent:0;
+	text-align:center;
+	width:100%;
+}
+#main dl {
+	width:250px;
+	margin:20px auto;
+}
+#main dl dd {
+	padding:6px 0;
+}
+#main dl dd a{
+	cursor:pointer;
+}
+#main dl dd a:hover{
+	color:#f00;
+	text-decoration:underline;
+}
+
+#main dl dd .back{
+	width:60px;
+	height:19px;
+	border:1px dashed #333;
+	cursor:pointer;
+/* 	margin:5px 0 0 auto; */
+	float:right;
+}
+#main dl dd .back:hover{
+	color:#f00;
+}
